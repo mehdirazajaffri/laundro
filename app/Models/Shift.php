@@ -73,15 +73,15 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Shift extends Model
 {
-    use SoftDeletes;
+    // use SoftDeletes;
 
     public $table = 'cleanly_shift';
     
-    const CREATED_AT = 'created_at';
-    const UPDATED_AT = 'updated_at';
+    const CREATED_AT = 'created_date';
+    const UPDATED_AT = 'modified_date';
 
 
-    protected $dates = ['deleted_at'];
+    // protected $dates = ['deleted_at'];
 
 
     public $fillable = [
